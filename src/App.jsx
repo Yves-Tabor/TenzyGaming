@@ -45,12 +45,11 @@ const rollDice = () => !gameWon ? setDice(prevDice => prevDice.map(die => (die.i
     
   return (
     <>
-    {gameWon && <Confetti />}
     <main>
       <Header>
         {/* For Screen-Readers only (Those who might not see confettis) */}
         <div aria-live="polite" className="sr-only">
-          {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
+          {gameWon && <p>Congratulations! You won! Press, "New Game" to start again.</p>}
         </div> 
 
       </Header>
